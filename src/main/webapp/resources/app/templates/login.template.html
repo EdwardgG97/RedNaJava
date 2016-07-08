@@ -1,0 +1,28 @@
+<h3 class="login-header">Login</h3>
+<div class="row">
+	<form class="col s12" ng-submit="$ctrl.authenticate()">
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="id_email" type="email" class="validate text-color" ng-model="$ctrl.loginModel.email">
+          		<label for="id_email">Email</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+	          <input id="id_pass" type="password" class="validate text-color" ng-model="$ctrl.loginModel.pass">
+	          <label for="id_pass">Password</label>
+	        </div>
+		</div>
+		<div class="row">
+			<div class="col m4 s12">
+				<button type="submit" class="waves-effect waves-light btn green">Login</button>
+			</div>
+			<div class="col m4 right-align s12">
+				<a href="#/forget-password">Forget Password?</a>
+			</div>
+			<div class="col m4 right-align s12">
+				<a href="#/create-account">Create Account</a>
+			</div>
+		</div>
+	</form>
+</div>
