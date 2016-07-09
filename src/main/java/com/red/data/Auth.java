@@ -19,7 +19,7 @@ public class Auth {
 		this.email = email;
 		this.password = password;
 		this.count = 0;
-		this.clients = Data.jdbcTemplate().query(new SqlBuilder().Select().From(AppSchemas.CLIENT).Result(), new RowMapper<ClientEntity>(){
+		this.clients = Data.jdbcTemplate().query(new SqlBuilder().Select().From(AppSchemas.CLIENTS).Result(), new RowMapper<ClientEntity>(){
 
 			@Override
 			public ClientEntity mapRow(ResultSet rs, int rowNum) throws SQLException {

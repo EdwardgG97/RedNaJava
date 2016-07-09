@@ -9,7 +9,6 @@ function LoginService($http, API_URL, $q){
 	};
 	
 	function getAuth(data){
-		console.log(data);
 		var deferred = $q.defer();
 		$http.post(API_URL + "/auth", data)
 		     .then(d => deferred.resolve(d.data))

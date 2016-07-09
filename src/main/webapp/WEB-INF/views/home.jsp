@@ -4,6 +4,7 @@
 	<head>
 		<title>CMS</title>
 		<meta charset="UTF-8" />
+		<meta http-equiv="cache-control" content="no-cache" />
 		<c:url value="/resources/js" var="js"></c:url>
 		<c:url value="/resources/app" var="app"></c:url>
 		<c:url value="/resources/css" var="css"></c:url>
@@ -11,6 +12,7 @@
   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 		<link href="${ css }/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="${ js }/script.js"></script>
 		<script type="text/javascript" src="${ js }/angular.js"></script>
 		<script type="text/javascript" src="${ js }/angular-route.js"></script>
 		<script type="text/javascript" src="${ js }/angular-animate.js"></script>
@@ -20,9 +22,16 @@
 		<script type="text/javascript" src="${ app }/components/login.component.js?2"></script>
 		<script type="text/javascript" src="${ app }/components/forgetPass.component.js?2"></script>
 		<script type="text/javascript" src="${ app }/components/createAccount.component.js?2"></script>
+		<script type="text/javascript" src="${ app }/components/dashboard.component.js?2"></script>
 		<script type="text/javascript" src="${ app }/app.router.js?1"></script>
 	</head>
 	<body ng-app="app">
+		<div class="loader">
+			<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+		</div>
 		<section ng-class="contain ? 'container' : '' ">
 			<ng-view></ng-view>
 		</section>

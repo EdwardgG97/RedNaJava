@@ -2,9 +2,14 @@ angular
 	.module("app")
 	.component("dashboard", {
 		templateUrl: "/app/resources/app/templates/dashboard.template.html",
-		controller: ForgetPassController
+		controller: DashBoardController
 	});
 
-function ForgetPassController(){
-	
+DashBoardController.$inject = ['$rootScope'];
+function DashBoardController($rootScope){
+	var vm = this;
+	vm.sessionModel = {
+			userEmail: $rootScope.userData.userEmail,
+			userId: $rootScope.userData.userId
+	}
 }
