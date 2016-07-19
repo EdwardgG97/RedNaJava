@@ -8,6 +8,7 @@ function Runner($rootScope){
 	$rootScope.contain = true;
 	$rootScope.userData = {
 			userEmail: "",
-			userId: 0
+			userId: 0,
+			userCompleteName: ""
 	};
 }

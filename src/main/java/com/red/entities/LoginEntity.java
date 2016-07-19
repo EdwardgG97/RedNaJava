@@ -2,7 +2,7 @@ package com.red.entities;
 
 public class LoginEntity {
 	
-	private String response, userEmail;
+	private String response, userEmail, userCompleteName;
 	private int status, userId;
 	
 	public String getUserEmail() {
@@ -28,6 +28,12 @@ public class LoginEntity {
 	}
 	public void setStatus(int status) {
 		this.status = status;
+	}
+	public String getUserCompleteName() {
+		return userCompleteName;
+	}
+	public void setUserCompleteName(String userCompleteName) {
+		this.userCompleteName = userCompleteName;
 	}
 	
 	

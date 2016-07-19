@@ -17,15 +17,9 @@ body{
 	color: white;
 }
 
-.dashboard {
-	background: white;
-	position: absolute;
-	width: 97.5%;
-	height: 95%;
-	margin: 20px;
-	border-radius: 2px;
+.btn-border {
+	border: 1px solid white !important;
 }
-
 
 .loader {
 	position: absolute;

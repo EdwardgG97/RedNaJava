@@ -23,6 +23,7 @@ public class ApiController {
 			loginEntity.setStatus(200);
 			loginEntity.setUserEmail(auth.getClient().getEmail());
 			loginEntity.setUserId(auth.getClient().getId());
+			loginEntity.setUserCompleteName(auth.getClient().getCompleteName());
 		}else{
 			loginEntity.setResponse("unauthorized");
 			loginEntity.setStatus(401);

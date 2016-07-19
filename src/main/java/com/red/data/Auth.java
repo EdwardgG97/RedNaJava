@@ -27,6 +27,7 @@ public class Auth {
 				clientEntity.setEmail(rs.getString(ClientEntity.EMAIL));
 				clientEntity.setPass(rs.getString(ClientEntity.PASSWORD));
 				clientEntity.setId(rs.getInt(ClientEntity.ID));
+				clientEntity.setCompleteName(rs.getString(ClientEntity.COMPLETE_NAME));
 				return clientEntity;
 			}
 			
