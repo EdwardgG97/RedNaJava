@@ -29,6 +29,7 @@ function LoginController($rootScope, LoginService, $location){
 								$rootScope.contain = false;
 								$rootScope.userData.userEmail = data.userEmail;
 								$rootScope.userData.userId = data.userId;
+								$rootScope.userData.userCompleteName = data.userCompleteName;
 								$location.path('/dashboard');
 							}else
 								Materialize.toast('Email or Password are not correct!', 3000, 'rounded red');
